@@ -1,0 +1,105 @@
+body, html{
+    padding: 0;
+    margin: 0;
+    font-family: "Rye", serif;
+    font-weight: 100;
+    font-style: normal;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.container{
+    height: 100vh;
+}
+
+span#error{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-family: "Rye", serif;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px #000;
+    font-style: normal;
+    color: #58c29e;
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#board{
+    height: 550px;
+    width: 670px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    gap: 5px;
+    margin: 75px 0 0 280px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.card{
+    width: calc((100% - (5px * 3)) / 4); /* 4 cards per row with 5px gaps */
+    height: calc((100% - (5px * 3)) / 4); /* 4 rows with 5px gaps */
+    object-fit: contain; /* show full image without cropping */
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+}
+
+.back-btn{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    z-index: 1;
+    width: 35px;
+    height: 35px;
+    
+}
+#error-image{
+    position: absolute; 
+    top: 35%; 
+    left: 45%; 
+    transform: translate(-35%, -35%); 
+    max-width: 40%; 
+    z-index: 10;
+}
+
+#confetti{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+@media screen and (max-width: 430px){
+    .bg-video{
+        width: 100vw;
+        height: 100vh;
+    }
+    #board{
+        height: 100%;
+        width: 125%;
+        gap: 5px;
+        margin: 10% -10%;
+        transform: scale(0.5);
+    }
+    #error-image{
+        top: 35%;
+        left: 25%;
+        transform: scale(1.2);
+    }
+}

@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Memory Breathing🔥</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+        </style>
+        <link rel="icon" href="asset/kamado1.jpg">
+    </head>
+    <body>
+        <div class="container">
+            <video src="asset/home-bg-video.mp4" autoplay loop muted></video>
+            
+            <h1>
+                Memory Breathing Game <img src="asset/card-img.jpg" class="card-img">
+            </h1>
+            
+            <div class="div-btn">
+                <div class="div-start">
+                    <button class="start-btn" onclick="redirect()">Start Game</button>
+                </div>
+                <div class="div-quit">
+                    <button class="quit-btn" onclick="quit()">Quit Game</button>
+                </div>
+            </div>
+        </div>
+        <script>
+            function redirect() {
+                window.location.href = "game.html";
+            }
+            function quit() {
+                alert("Winners never quit!");
+            }
+        </script>
+    </body>
+</html>

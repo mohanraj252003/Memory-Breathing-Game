@@ -1,0 +1,150 @@
+.container{
+    height: 100vh;
+}
+
+body, html{
+    padding: 0;
+    margin: 0;
+    font-family: "Rye", serif;
+    font-weight: 100;
+    font-style: normal;
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+h1{
+    color: #58c29e;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 0 5px 5px #000;
+    letter-spacing: 5px;
+}
+
+.card-img{
+    width: 2.5%;
+    height: 2.5%;
+    transform: translateY(10px);
+    margin-left: 5px;
+    animation: rotate 1s infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+    to {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+}
+
+.div-btn{
+    margin-top: 300px;
+
+}
+
+.div-start{
+    text-align: center;
+    transform: translateY(-50px);   
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1.2s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 0.8;
+        transform: translateY(0);
+    }
+}
+.div-quit{
+    text-align: center;
+    transform: translateY(-50px);   
+    opacity: 0;
+    margin-top: 30px;  
+    animation: fadeIn 1s forwards;
+    animation-delay: 1.4s;
+}
+
+.start-btn{
+    padding: 20px 70px;
+    border-radius: 12px;
+    border: none;
+    background-color: #58c29e;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 2.5px;
+    font-family: "Rye", serif;
+    font-style: normal;
+}
+
+.quit-btn{
+    padding: 20px 70px;
+    border-radius: 12px;
+    border: none;
+    background-color: #58c29e;
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+    letter-spacing: 2.5px;
+    font-family: "Rye", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.start-btn:hover{
+    background-color: #000;
+    color: #58c29e;
+    transform: scale(1.1);
+    border-radius: 0px;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+}
+
+.quit-btn:hover{
+    background-color: #000;
+    color: #58c29e;
+    transform: scale(1.1);
+    border-radius: 0px;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 430px) {
+    .div-btn{
+        margin-top: 58%;
+        height: 100vh;
+    }
+    .start-btn{
+        width: 60%;
+        height: 25%;
+        font-size: 14px;
+        
+    }
+    .quit-btn{
+        width: 60%;
+        height: 25%;
+        font-size: 14px;
+        
+    }
+    .div-quit{
+        margin-top: 15px;
+    }
+    .card-img{
+        width: 5.5%;
+    }
+    h1{
+        font-size: 34px;
+    }
+   
+}

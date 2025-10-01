@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Memory Breathing🔥</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="game.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+        </style>
+        <link rel="icon" href="asset/kamado1.jpg">
+    </head>
+    <body>
+        <div class="container">
+            <video src="asset/bg-video.mp4" autoplay loop muted class="bg-video"></video>
+            <img src="asset/back-button.svg" class="back-btn" onclick="backBtn()">
+            <span id="error">Errors: <span id="errors">0</span></span>
+            <div id="board"></div>
+            <div id="error-image-container" style="display: none;">
+                <img id="error-image" src="" alt="Error Image">
+                <img id="confetti" src="">
+            </div>            
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
