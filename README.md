@@ -18,7 +18,9 @@ A simple yet addictive memory card game built with **HTML, CSS, and JavaScript**
 
 ## 📸 Screenshots
 
-> <img src="Screenshots/Screenshot 1.png>
+> <img src="Screenshots/Screenshot%201.png" alt="Screenshot 1" width="600"/>
+<img src="Screenshots/Screenshot%202.png" alt="Screenshot 2" width="600"/>
+<img src="Screenshots/Screenshot%203.png" alt="Screenshot 3" width="600"/>
 
 ## 🚀 How to Play
 
